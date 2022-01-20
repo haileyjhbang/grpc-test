@@ -8,7 +8,8 @@ jar {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'net.devh:grpc-server-spring-boot-starter:2.12.0.RELEASE'
-    implementation files('../common/build/libs/common-plain.jar')
+   // implementation files('../common/build/libs/common-plain.jar')
+    implementation project(':common')
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

@@ -9,8 +9,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class GrpcClientService {
+    final String SERVER_NAME = "test-name";
 
-    @GrpcClient("test-name")
+    @GrpcClient(SERVER_NAME)
     private SimpleGrpc.SimpleBlockingStub simpleStub;
 
     public String sendMessage(final String name) {

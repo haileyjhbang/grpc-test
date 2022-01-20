@@ -12,7 +12,7 @@ public class GrpcServerService extends SimpleGrpc.SimpleImplBase {
     @Override
     public void sayHello(HelloRequest request, StreamObserver<HelloReply> responseObserver) {
         HelloReply reply = HelloReply.newBuilder()
-                .setMessage("Hello ==> " + request.getName())
+                .setMessage("Hello who are you? ==> " + request.getName())
                 .build();
         responseObserver.onNext(reply);
         responseObserver.onCompleted();
