@@ -9,7 +9,7 @@ dependencies {
     implementation ('org.springframework.boot:spring-boot-starter-web') {
         exclude module: 'spring-boot-starter-tomcat'
     }
-    implementation 'net.devh:grpc-client-spring-boot-starter:2.12.0.RELEASE'
+    implementation 'net.devh:grpc-client-spring-boot-starter:2.13.1.RELEASE'
    // implementation files('../common/build/libs/common-plain.jar')
     implementation project(':common')
 
