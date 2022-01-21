@@ -10,8 +10,8 @@ dependencies {
         exclude module: 'spring-boot-starter-tomcat'
     }
     implementation 'net.devh:grpc-client-spring-boot-starter:2.13.1.RELEASE'
-   // implementation files('../common/build/libs/common-plain.jar')
-    implementation project(':common')
+    implementation files('../common/build/libs/common-plain.jar')
+    //implementation project(':common')
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'

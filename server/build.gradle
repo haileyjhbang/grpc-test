@@ -8,8 +8,9 @@ jar {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'net.devh:grpc-server-spring-boot-starter:2.13.1.RELEASE'
-   // implementation files('../common/build/libs/common-plain.jar')
-    implementation project(':common')
+    implementation files('../common/build/libs/common-plain.jar')
+    //프로젝트 임포트 시 src/main 아래를 기본 경로로 잡는데, 우리는 build 한 클래스를 바라봐야하므로 Jar로 변경
+    // implementation project(':common')
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

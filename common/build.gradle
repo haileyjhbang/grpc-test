@@ -13,6 +13,10 @@ plugins {
 
 group 'com.grpc.common'
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     implementation "io.grpc:grpc-protobuf:${grpcVersion}"
     implementation "io.grpc:grpc-stub:${grpcVersion}"
@@ -39,4 +43,8 @@ protobuf {
             grpc{}
         }
     }
+}
+
+test {
+    useJUnitPlatform()
 }

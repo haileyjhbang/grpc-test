@@ -1,5 +1,5 @@
 rootProject.name = 'grpc-test'
 
-include 'common'
+//include 'common'
 include 'client'
 include 'server'
